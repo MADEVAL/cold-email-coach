@@ -1,0 +1,9 @@
+Subject: week one
+
+Dana - your post about 40% of new accounts never finishing setup stayed with me. That number usually lives in a spreadsheet, and someone ends up chasing each account by hand.
+
+We make a small checklist tool for CS teams. It shows where each account gets stuck, so nobody has to guess.
+
+Is that still a problem for you, or is setup under control?
+
+Yevhen, Founder at Relay
