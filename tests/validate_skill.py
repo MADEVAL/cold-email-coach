@@ -32,7 +32,7 @@ REQUIRED_SECTIONS = [
     "Output Contract",
     "Constraints",
     "Optional Lint",
-    "Files",
+    "Reference Files",
     "Test Cases",
 ]
 

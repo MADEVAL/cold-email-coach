@@ -6,8 +6,7 @@ compatibility: Plain Markdown. Optional Python 3.9+ for scripts/email_lint.py.
 metadata:
   author: Yevhen Leonidov
   version: "1.1.0"
-  languages: "any"
-  homepage: https://github.com/MADEVAL/cold-email-coach
+  languages: [any]
   repository: "https://github.com/MADEVAL/cold-email-coach"
 ---
 
@@ -221,7 +220,7 @@ cat draft.txt | python scripts/email_lint.py
 
 It reports word count, reading grade, you/I ratio, question and ask counts, subject length, clichés, urgency words, caps, exclamations, links, and placeholders. It does not judge relevance or voice. Treat it as a smoke test, not a verdict.
 
-## Files
+## Reference Files
 
 | File | Purpose |
 |---|---|
