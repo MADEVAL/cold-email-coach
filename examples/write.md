@@ -13,11 +13,11 @@
 
 Good brief: recipient, offer, problem, and a real personalization fact. No questions needed.
 
-## Variant 1 — observation
+## Variant 1 - observation
 
 **Subject:** week one
 
-Dana — your post about 40% of new accounts never finishing setup stayed with me. That number usually lives in a spreadsheet, and someone ends up chasing each account by hand.
+Dana - your post about 40% of new accounts never finishing setup stayed with me. That number usually lives in a spreadsheet, and someone ends up chasing each account by hand.
 
 We make a small checklist tool for CS teams. It shows where each account gets stuck, so nobody has to guess.
 
@@ -27,11 +27,11 @@ Yevhen, Founder at Relay
 
 **Words:** 67
 
-## Variant 2 — problem question
+## Variant 2 - problem question
 
 **Subject:** setup drop-off
 
-Dana — when a new account goes quiet in week one, who notices first: your team, or nobody?
+Dana - when a new account goes quiet in week one, who notices first: your team, or nobody?
 
 Most CS teams find out at the renewal call. We built a checklist tool that flags stuck accounts on day three instead of day thirty.
 
@@ -41,11 +41,11 @@ Yevhen, Founder at Relay
 
 **Words:** 55
 
-## Variant 3 — short case
+## Variant 3 - short case
 
 **Subject:** day three, not day fourteen
 
-Dana — if your team finds stuck accounts at the two-week review, that is usually a week too late. One CS lead we work with now sees them on day three, with the same accounts and an earlier conversation.
+Dana - if your team finds stuck accounts at the two-week review, that is usually a week too late. One CS lead we work with now sees them on day three, with the same accounts and an earlier conversation.
 
 We make the checklist tool behind that. No dashboard overhaul, just a short daily list.
 
@@ -61,7 +61,7 @@ Variant 3 uses a case. It is acceptable only because a real one exists in this f
 
 | # | Check | V1 | V2 | V3 |
 |---|---|---|---|---|
-| 1 | 50–125 words | PASS | PASS | PASS |
+| 1 | 50-125 words | PASS | PASS | PASS |
 | 2 | First line about recipient | PASS | PASS | PASS |
 | 3 | No pitch | PASS | PASS | PASS |
 | 4 | Problem first | PASS | PASS | PASS |

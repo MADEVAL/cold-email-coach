@@ -4,7 +4,7 @@ Use this for REVIEW and to self-check WRITE and REWRITE. Every item is binary: P
 
 ## 1. Length
 
-**PASS:** body is 50–125 words.
+**PASS:** body is 50-125 words.
 **FAIL:** under 50 (feels abrupt) or over 125 (loses phone readers).
 
 Count the body, not the subject or signature. If the email is 126 words, cut. Do not round down.
@@ -68,7 +68,7 @@ Watch for: leverage, utilize, facilitate, optimize, streamline, robust, seamless
 
 ## 8. Subject line
 
-**PASS:** 1–6 words, neutral, sentence case or lowercase, no hype, no caps, no exclamation marks.
+**PASS:** 1-6 words, neutral, sentence case or lowercase, no hype, no caps, no exclamation marks.
 **FAIL:** long, salesy, clickbait, all caps, emoji, fake "Re:" or "Fwd:".
 
 - PASS: `week one`
@@ -106,9 +106,9 @@ Test: read it aloud. If you would not say a sentence to a colleague, cut it.
 
 ## Scoring
 
-- **10–11:** send it. Check facts and the personalization one last time.
-- **8–9:** small fixes. Usually length, a second ask, or one cliché.
-- **6–7:** rewrite the opening and the ask. The middle will follow.
+- **10-11:** send it. Check facts and the personalization one last time.
+- **8-9:** small fixes. Usually length, a second ask, or one cliché.
+- **6-7:** rewrite the opening and the ask. The middle will follow.
 - **5 or below:** start over. The email is about the sender, not the recipient.
 
 The score is a diagnostic, not a guarantee. A technically clean email can still be irrelevant. Relevance is judged against the recipient, not the checklist.

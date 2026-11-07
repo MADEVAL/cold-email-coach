@@ -20,14 +20,14 @@ Alex
 ## Short checklist of the original
 
 - **Length:** PASS (about 100 words).
-- **First line:** FAIL — starts with "I hope you're doing well", then "I'm reaching out".
-- **Pitch:** FAIL — AI-powered platform, streamline, visibility, account health.
-- **Problem:** FAIL — no concrete problem, only "improve onboarding".
-- **CTA:** FAIL — a 30-minute call, a reply, and a website link.
-- **Pronouns:** FAIL — "we/our/I" outnumbers "you".
-- **Language:** FAIL — jargon and an unverifiable claim about results.
-- **Subject:** FAIL — six generic words in title case.
-- **Voice:** FAIL — reads like a template with the name swapped.
+- **First line:** FAIL - starts with "I hope you're doing well", then "I'm reaching out".
+- **Pitch:** FAIL - AI-powered platform, streamline, visibility, account health.
+- **Problem:** FAIL - no concrete problem, only "improve onboarding".
+- **CTA:** FAIL - a 30-minute call, a reply, and a website link.
+- **Pronouns:** FAIL - "we/our/I" outnumbers "you".
+- **Language:** FAIL - jargon and an unverifiable claim about results.
+- **Subject:** FAIL - six generic words in title case.
+- **Voice:** FAIL - reads like a template with the name swapped.
 
 **Original: 1/11**
 
@@ -35,7 +35,7 @@ Alex
 
 **Subject:** week one
 
-Dana — your post about 40% of new accounts never finishing setup stayed with me. Most teams only see it when the account goes quiet.
+Dana - your post about 40% of new accounts never finishing setup stayed with me. Most teams only see it when the account goes quiet.
 
 We make a small checklist that shows where each account gets stuck, day by day.
 

@@ -17,11 +17,23 @@ That single goal changes everything. No pitch, no feature tour, no clever subjec
 
 This skill helps you write that note, audit an existing one, or fix it. It draws on two schools of cold outreach: Josh Braun's "Sales Without Rejection" and Will Allred's work at Lavender. The principles are applied in original words. There are no quotes and no affiliation with either author.
 
+## When not to use
+
+Cold Email Coach writes first-contact emails from one person to another. Use something else when:
+
+| Request | Use instead |
+|---|---|
+| Newsletter, product announcement, or lifecycle email to existing customers | A lifecycle or email-marketing workflow - this skill is first contact only |
+| Multi-step sequence with timing, branching, and A/B logic | A sequence builder; this skill covers one email plus one follow-up |
+| SEO copy, landing pages, ads | RankWise or MindFluence |
+| Rewriting AI-sounding text of any kind | human-ai |
+| Researching the recipient or their company | A research/browsing tool - never invent personalization |
+
 ## Pick a mode
 
 | Mode | Use when | Output |
 |---|---|---|
-| **WRITE** | The user describes a recipient and an offer, but has no email yet | 2–3 variants, each with subject, body, and word count |
+| **WRITE** | The user describes a recipient and an offer, but has no email yet | 2-3 variants, each with subject, body, and word count |
 | **REVIEW** | The user pastes an email and wants a critique only | 11-point checklist, score, up to 3 fixes |
 | **REWRITE** | The user pastes an email and wants it made better | Short checklist of the original, score, then the rewritten email |
 
@@ -71,8 +83,8 @@ Placeholders are better than fiction. A placeholder gets filled in; a made-up co
 
 **From Will Allred:**
 
-- Keep it short: 50–125 words, readable on a phone without scrolling much.
-- Use simple words and short sentences. Aim for a grade 3–5 reading level.
+- Keep it short: 50-125 words, readable on a phone without scrolling much.
+- Use simple words and short sentences. Aim for a grade 3-5 reading level.
 - The first line is about the recipient, not the sender.
 - One idea, one ask. A second CTA splits attention and kills replies.
 - "You" should appear noticeably more often than "I", "we", or the company name.
@@ -84,7 +96,7 @@ Placeholders are better than fiction. A placeholder gets filled in; a made-up co
 
 Every review scores these. Each item gets **PASS** or **FAIL** and a one-line reason.
 
-1. **Length.** 50–125 words.
+1. **Length.** 50-125 words.
 2. **First line.** About the recipient, not the sender or the company.
 3. **No pitch.** No feature list, no self-praise, no company biography.
 4. **Problem first.** A concrete problem or observation, not "we're the best".
@@ -106,7 +118,7 @@ A score is not a verdict. A 10/11 email can still be boring. Use judgment.
 
 1. Name the recipient, the problem, and one specific observation for the first line.
 2. Write the single question that makes the problem visible.
-3. Draft 2–3 variants with different entries:
+3. Draft 2-3 variants with different entries:
    - an observation about their work;
    - a direct question about the problem;
    - a short, modest case (only if a real one exists).
@@ -132,14 +144,14 @@ Do not add facts that were not in the original or the brief. Rewriting is subtra
 
 If the pasted text is not a cold email (a newsletter, an internal note, a customer email), say so in one line and stop.
 
-## Output format
+## Output contract
 
 Keep the output clean. No preamble, no "here is your email", no explanation of the method.
 
 ### WRITE
 
 ```markdown
-**Variant 1 — observation**
+**Variant 1 - observation**
 
 Subject: [subject]
 
@@ -153,8 +165,8 @@ Repeat for each variant. Two or three variants, never more.
 ### REVIEW
 
 ```markdown
-1. Length — PASS (84 words)
-2. First line — FAIL ("I hope this finds you well" is about the sender's manners, not the recipient)
+1. Length - PASS (84 words)
+2. First line - FAIL ("I hope this finds you well" is about the sender's manners, not the recipient)
 ...
 
 **Score: 7/11**

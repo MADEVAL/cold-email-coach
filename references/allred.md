@@ -6,7 +6,7 @@ The notes below are a practical summary for this skill. They are not quotes, and
 
 ## Length
 
-- Target **50–125 words** for the body.
+- Target **50-125 words** for the body.
 - Under 50 words can feel abrupt unless the context is already warm.
 - Over 125 words loses phone readers. If the email needs scrolling, it needs editing.
 - One paragraph can be one or two sentences. Three or four short paragraphs are enough.
@@ -15,7 +15,7 @@ Why it works: the recipient decides in a few seconds whether the email is worth 
 
 ## Readability
 
-- Aim for a grade **3–5** reading level. Short words, short sentences.
+- Aim for a grade **3-5** reading level. Short words, short sentences.
 - Average sentence length: under 15 words.
 - Replace multi-syllable abstractions with concrete nouns.
 - One idea per sentence.
@@ -76,7 +76,7 @@ Better:
 
 ## Subject lines
 
-- Short: 1–5 words is ideal, 6 is the practical ceiling.
+- Short: 1-5 words is ideal, 6 is the practical ceiling.
 - Neutral: sentence case or lowercase.
 - No hype, no all caps, no exclamation marks, no emoji.
 - No fake "Re:" or "Fwd:".

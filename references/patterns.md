@@ -98,7 +98,7 @@ Three touches, then stop. Each touch adds something new.
 
 One observation, one idea, one question.
 
-### Touch 2: a new angle (3–5 days later)
+### Touch 2: a new angle (3-5 days later)
 
 > One more angle on [problem]: [specific example or number from a real source].
 >
@@ -106,7 +106,7 @@ One observation, one idea, one question.
 
 No guilt. No "just following up". No summary of the first email.
 
-### Touch 3: a clean exit (5–7 days later)
+### Touch 3: a clean exit (5-7 days later)
 
 > Last note from me. If [problem] becomes a priority, reply and I'll pick it up.
 >

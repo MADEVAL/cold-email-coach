@@ -1,5 +1,9 @@
 # Cold Email Coach
 
+[skills.sh profile](https://www.skills.sh/madeval) - this skill is not indexed yet.
+
+\[ **English** | [Русский](README.ru.md) \]
+
 **Write the email a person would actually answer.**
 
 Most cold emails fail for an unglamorous reason: they are about the sender. A paragraph of company history, a feature list, a demo request, and a "just following up" three days later. The recipient has no reason to care and no easy way to reply.
@@ -12,7 +16,7 @@ The rules come from two people who have thought harder about cold email than mos
 
 | Mode | Input | Output |
 |---|---|---|
-| **WRITE** | A recipient and an offer | 2–3 short emails with subject lines and word counts |
+| **WRITE** | A recipient and an offer | 2-3 short emails with subject lines and word counts |
 | **REVIEW** | An existing email | 11-item checklist, score out of 11, up to 3 fixes |
 | **REWRITE** | An existing email | Short critique, score, then a fixed version |
 
@@ -22,7 +26,7 @@ It also handles follow-ups, subject lines, and the awkward case where you have n
 
 Every email is scored on the same things:
 
-1. 50–125 words.
+1. 50-125 words.
 2. The first line is about the recipient.
 3. No pitch, no feature list.
 4. A concrete problem or observation, not "we're the best".
@@ -78,7 +82,7 @@ The skill chooses the mode automatically: an email pasted without instructions g
 ```text
 Subject: week one
 
-Dana — your post about 40% of new accounts never finishing setup stayed with me.
+Dana - your post about 40% of new accounts never finishing setup stayed with me.
 That number usually lives in a spreadsheet, and someone ends up chasing each
 account by hand.
 
@@ -95,8 +99,8 @@ Words: 67
 A review looks like this:
 
 ```text
-1. Length — FAIL (213 words)
-2. First line — FAIL ("I hope this email finds you well" is about the sender)
+1. Length - FAIL (213 words)
+2. First line - FAIL ("I hope this email finds you well" is about the sender)
 ...
 Score: 0/11
 
@@ -136,7 +140,7 @@ It cannot judge relevance, personalization, or voice. That is still the model's 
 
 ## Design decisions
 
-- **Short beats clever.** 50–125 words. If it needs scrolling on a phone, it is not finished.
+- **Short beats clever.** 50-125 words. If it needs scrolling on a phone, it is not finished.
 - **One ask.** A second CTA is not a backup plan. It is a reason to do nothing.
 - **No invented facts.** No fake personalization, no imaginary customers, no made-up metrics. A placeholder is honest and gets filled in.
 - **No fake urgency.** Real deadlines are fine. Manufactured ones cost trust.
