@@ -10,7 +10,7 @@
 
 Most cold emails fail for an unglamorous reason: they are about the sender. A paragraph of company history, a feature list, a demo request, and a "just following up" three days later. The recipient has no reason to care and no easy way to reply.
 
-This is a skill for AI agents that fixes that. Give it who you are writing to, what you sell, and the problem it solves. It writes two or three short emails, scores them against an 11-point checklist, and cuts anything that still sounds like a campaign.
+This is a skill for AI agents that fixes that. **Skill class:** lean - a compact routing file plus on-demand references. Give it who you are writing to, what you sell, and the problem it solves. It writes two or three short emails, scores them against an 11-point checklist, and cuts anything that still sounds like a campaign.
 
 The rules come from two people who have thought harder about cold email than most: Josh Braun and Will Allred. Their principles are applied in original words. No quotes, no name-dropping, no affiliation.
 
@@ -160,9 +160,26 @@ Runtime files live in `skills/cold-email-coach/`; development files stay at the 
 - The checklist is a diagnostic. A 10/11 email can still be irrelevant.
 - No tool can promise replies. Anyone who does is selling something else.
 
+## Requirements
+
+- Any LLM with a system prompt / custom instructions field.
+- Optional: Python 3.9+ for `scripts/email_lint.py`.
+
 ## Contributing
 
 Issues and pull requests are welcome. If a rule is wrong, bring an example. If a cliché is missing, add it with a replacement. Run the cases in `skills/cold-email-coach/tests/cases.md` before opening a PR.
+
+## GitHub Description
+
+```
+Short, human cold emails that earn a reply. A skill for AI agents: write, review, and rewrite first-contact outreach.
+```
+
+## GitHub Tags
+
+`ai` `ai-agents` `cold-email` `outreach` `sales` `copywriting` `prompt-engineering`
+
+Skills.sh: https://www.skills.sh/madeval
 
 ## License
 

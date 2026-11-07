@@ -1,11 +1,12 @@
 ---
 name: cold-email-coach
-description: "Drafts, reviews, and rewrites cold outreach emails that sound like a person, not a campaign. Built on the principles of Josh Braun (Sales Without Rejection) and Will Allred (Lavender). Use when asked to write a cold email, critique or improve an existing one, write a follow-up, or produce subject lines. Do NOT use for newsletters, long sequences, or emails to existing customers."
+description: "Drafts, reviews, and rewrites cold outreach emails that sound like a person, not a campaign. Built on the principles of Josh Braun (Sales Without Rejection) and Will Allred (Lavender). Use when asked to write a cold email, critique or improve an existing one, write a follow-up, or produce subject lines. Do NOT use for newsletters, long sequences, or emails to existing customers; for SEO copy use RankWise, for persuasion use MindFluence."
 license: MIT
 compatibility: Plain Markdown. Optional Python 3.9+ for scripts/email_lint.py.
 metadata:
   author: Yevhen Leonidov
   version: "1.1.0"
+  languages: "any"
   homepage: https://github.com/MADEVAL/cold-email-coach
   repository: "https://github.com/MADEVAL/cold-email-coach"
 ---
@@ -115,7 +116,7 @@ A score is not a verdict. A 10/11 email can still be boring. Use judgment.
 
 ## Workflow
 
-### WRITE
+### WRITE (Workflow)
 
 1. Name the recipient, the problem, and one specific observation for the first line.
 2. Write the single question that makes the problem visible.
@@ -126,7 +127,7 @@ A score is not a verdict. A 10/11 email can still be boring. Use judgment.
 4. Run every variant through the checklist. Fix what fails.
 5. Output only the final versions.
 
-### REWRITE
+### REWRITE (Workflow)
 
 1. Read the original once as the recipient. Notice where attention drops.
 2. Score it against the checklist.
@@ -136,7 +137,7 @@ A score is not a verdict. A 10/11 email can still be boring. Use judgment.
 
 Do not add facts that were not in the original or the brief. Rewriting is subtraction, not decoration.
 
-### REVIEW
+### REVIEW (Workflow)
 
 1. Read once as the recipient, once as a skeptical editor.
 2. Score all 11 items. Give a reason for each FAIL, and for PASS only when it is not obvious.
@@ -149,7 +150,7 @@ If the pasted text is not a cold email (a newsletter, an internal note, a custom
 
 Keep the output clean. No preamble, no "here is your email", no explanation of the method.
 
-### WRITE
+### WRITE (Output)
 
 ```markdown
 **Variant 1 - observation**
@@ -163,7 +164,7 @@ Words: [count]
 
 Repeat for each variant. Two or three variants, never more.
 
-### REVIEW
+### REVIEW (Output)
 
 ```markdown
 1. Length - PASS (84 words)
@@ -178,7 +179,7 @@ Repeat for each variant. Two or three variants, never more.
 3. ...
 ```
 
-### REWRITE
+### REWRITE (Output)
 
 ```markdown
 **Original: X/11**

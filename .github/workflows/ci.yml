@@ -8,49 +8,19 @@ permissions:
   contents: read
 
 jobs:
-  test:
+  check:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-
-      - name: Install check dependencies
-        run: pip install pyyaml
-
-      - name: Lint must pass on the good fixture
-        run: python skills/cold-email-coach/scripts/email_lint.py tests/fixtures/good-email.txt
-
-      - name: Lint must reject the bad fixture
+      - name: Validate skill structure
+        run: python tests/validate_skill.py
+      - name: Lint fixtures
         run: |
+          python skills/cold-email-coach/scripts/email_lint.py tests/fixtures/good-email.txt
           if python skills/cold-email-coach/scripts/email_lint.py tests/fixtures/bad-email.txt; then
             echo "bad fixture unexpectedly passed"
             exit 1
           fi
-
-      - name: Check skill frontmatter and relative links
-        run: |
-          python - <<'PY'
-          import os, re, sys
-          import yaml
-          skill_dir = "skills/cold-email-coach"
-          text = open(f"{skill_dir}/SKILL.md", encoding="utf-8").read()
-          m = re.match(r"^---\n(.*?)\n---\n", text, re.S)
-          if not m:
-              sys.exit("SKILL.md: missing frontmatter")
-          fm = yaml.safe_load(m.group(1))
-          for field in ("name", "description", "license", "compatibility"):
-              if not fm.get(field):
-                  sys.exit(f"SKILL.md: missing {field}")
-          missing = []
-          for path in re.findall(r"`((?:references|examples|scripts|tests)/[^`]*)`", text):
-              if not os.path.exists(os.path.join(skill_dir, path)):
-                  missing.append(path)
-          if missing:
-              sys.exit("SKILL.md: broken relative paths: " + ", ".join(sorted(set(missing))))
-          print("frontmatter and paths OK")
-          PY
-
-      - name: Check installer
-        run: python install.py --target project --dry-run
