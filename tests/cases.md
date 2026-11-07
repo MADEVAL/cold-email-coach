@@ -41,7 +41,7 @@ Run these before shipping a change to the skill. Each case states the input, the
 
 ## 4. Non-English email
 
-**Input:** a cold email in Russian, plus "проверь это письмо" ("check this email").
+**Input:** a cold email in Russian, plus a request in Russian to check it.
 
 **Expected mode:** REVIEW.
 
