@@ -5,7 +5,7 @@ license: MIT
 compatibility: Plain Markdown. Optional Python 3.9+ for scripts/email_lint.py.
 metadata:
   author: Yevhen Leonidov
-  version: "1.1.0"
+  version: "1.1.1"
   languages: [any]
   repository: "https://github.com/MADEVAL/cold-email-coach"
 ---

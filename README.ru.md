@@ -1,6 +1,6 @@
 # Cold Email Coach
 
-[![Version](https://img.shields.io/badge/version-1.1.0-blue)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-1.1.1-blue)](CHANGELOG.md)
 
 [skills.sh profile](https://www.skills.sh/madeval) - этот скилл ещё не в каталоге.
 
