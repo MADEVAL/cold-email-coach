@@ -25,7 +25,7 @@ Run these before shipping a change to the skill. Each case states the input, the
 
 - The first line contains an explicit placeholder such as `[PERSONALIZE: ...]`.
 - No fake compliment, post, or mutual connection is invented.
-- The output contains 2–3 variants, each with subject, body, and word count.
+- The output contains 2-3 variants, each with subject, body, and word count.
 
 ## 3. Two CTAs
 
@@ -85,7 +85,7 @@ Run these before shipping a change to the skill. Each case states the input, the
 **Pass criteria:**
 
 - Exactly five subject lines.
-- Each is 1–6 words, neutral, lowercase or sentence case.
+- Each is 1-6 words, neutral, lowercase or sentence case.
 - No caps, exclamation marks, emoji, or fake "Re:"/"Fwd:".
 - No extra commentary beyond a short heading.
 
@@ -130,7 +130,7 @@ Run these before shipping a change to the skill. Each case states the input, the
 
 **Pass criteria:**
 
-- All 11 items are listed, numbered 1–11.
+- All 11 items are listed, numbered 1-11.
 - Each item has PASS or FAIL and a one-line reason.
 - A score of the form `X/11` is present.
 - No more than three fixes are listed.

@@ -1,5 +1,7 @@
 # Cold Email Coach
 
+[![Version](https://img.shields.io/badge/version-1.1.0-blue)](CHANGELOG.md)
+
 [skills.sh profile](https://www.skills.sh/madeval) - this skill is not indexed yet.
 
 \[ **English** | [Русский](README.ru.md) \]
@@ -60,6 +62,7 @@ Useful flags:
 python install.py --list     # where it is installed
 python install.py --check    # compare installed copies with the repo
 python install.py --target project   # install into ./.opencode/skills
+python install.py --target project --dry-run   # show what would be copied
 ```
 
 No dependencies. Python 3.9+ is only needed for the optional linter and the installer.
@@ -115,8 +118,8 @@ Top fixes
 For a quick mechanical check:
 
 ```bash
-python scripts/email_lint.py draft.txt
-cat draft.txt | python scripts/email_lint.py
+python skills/cold-email-coach/scripts/email_lint.py draft.txt
+cat draft.txt | python skills/cold-email-coach/scripts/email_lint.py
 ```
 
 It reports word count, reading grade, you/I ratio, question and ask count, subject length, clichés, urgency words, caps, exclamations, links, and placeholders. It exits non-zero when a hard check fails.
@@ -124,6 +127,8 @@ It reports word count, reading grade, you/I ratio, question and ask count, subje
 It cannot judge relevance, personalization, or voice. That is still the model's job, and yours.
 
 ## Repository layout
+
+Runtime files live in `skills/cold-email-coach/`; development files stay at the repository root.
 
 | Path | Purpose |
 |---|---|
@@ -136,6 +141,7 @@ It cannot judge relevance, personalization, or voice. That is still the model's 
 | `examples/` | Worked examples for WRITE, REVIEW, REWRITE, follow-ups |
 | `tests/cases.md` | 15 test cases and pass criteria |
 | `scripts/email_lint.py` | Heuristic linter |
+| `agents/openai.yaml` | OpenAI agent manifest |
 | `install.py` | Installer for Claude Code, OpenCode, and portable agents |
 
 ## Design decisions
@@ -156,7 +162,7 @@ It cannot judge relevance, personalization, or voice. That is still the model's 
 
 ## Contributing
 
-Issues and pull requests are welcome. If a rule is wrong, bring an example. If a cliché is missing, add it with a replacement. Run the cases in `tests/cases.md` before opening a PR.
+Issues and pull requests are welcome. If a rule is wrong, bring an example. If a cliché is missing, add it with a replacement. Run the cases in `skills/cold-email-coach/tests/cases.md` before opening a PR.
 
 ## License
 

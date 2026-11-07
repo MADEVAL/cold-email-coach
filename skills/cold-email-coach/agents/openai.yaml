@@ -1,0 +1,6 @@
+interface:
+  display_name: "Cold Email Coach"
+  short_description: "Short, human cold emails that earn a reply"
+  default_prompt: "Write a cold email to a specific recipient. Ask for the missing details first."
+policy:
+  allow_implicit_invocation: true

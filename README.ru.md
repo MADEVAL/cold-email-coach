@@ -58,6 +58,7 @@ python install.py --target all
 python install.py --list     # где установлено
 python install.py --check    # сравнить установленные копии с репозиторием
 python install.py --target project   # установить в ./.opencode/skills
+python install.py --target project --dry-run   # показать, что будет скопировано
 ```
 
 Зависимостей нет. Python 3.9+ нужен только для опционального линтера и установщика.
@@ -113,8 +114,8 @@ Top fixes
 Для быстрой механической проверки:
 
 ```bash
-python scripts/email_lint.py draft.txt
-cat draft.txt | python scripts/email_lint.py
+python skills/cold-email-coach/scripts/email_lint.py draft.txt
+cat draft.txt | python skills/cold-email-coach/scripts/email_lint.py
 ```
 
 Он показывает число слов, уровень читаемости, соотношение you/I, количество вопросов и просьб, длину темы, клише, слова срочности, CAPS, восклицательные знаки, ссылки и плейсхолдеры. Возвращает ненулевой код, когда не проходит жёсткая проверка.
@@ -122,6 +123,8 @@ cat draft.txt | python scripts/email_lint.py
 Он не оценивает релевантность, персонализацию и голос. Это по-прежнему работа модели и ваша.
 
 ## Структура репозитория
+
+Рабочие файлы скила лежат в `skills/cold-email-coach/`, служебные файлы разработки остаются в корне.
 
 | Путь | Назначение |
 |---|---|
@@ -134,6 +137,7 @@ cat draft.txt | python scripts/email_lint.py
 | `examples/` | Готовые примеры для WRITE, REVIEW, REWRITE, follow-up |
 | `tests/cases.md` | 15 тестовых кейсов и критерии прохождения |
 | `scripts/email_lint.py` | Эвристический линтер |
+| `agents/openai.yaml` | Манифест OpenAI-агента |
 | `install.py` | Установщик для Claude Code, OpenCode и portable-агентов |
 
 ## Решения по дизайну
@@ -154,7 +158,7 @@ cat draft.txt | python scripts/email_lint.py
 
 ## Контрибьютинг
 
-Issues и pull requests приветствуются. Если правило неверное, принесите пример. Если не хватает клише, добавьте его вместе с заменой. Перед PR прогоните кейсы в `tests/cases.md`.
+Issues и pull requests приветствуются. Если правило неверное, принесите пример. Если не хватает клише, добавьте его вместе с заменой. Перед PR прогоните кейсы в `skills/cold-email-coach/tests/cases.md`.
 
 ## Лицензия
 

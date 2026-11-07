@@ -1,11 +1,14 @@
 # Changelog
 
-## [Unreleased]
+## [1.1.0] - 2026-11-07
 
 ### Changed
-- Added a `When not to use` section with a handoff table.
-- Renamed the output section to `Output contract`.
-- Long dashes replaced with hyphens across the documentation.
+- Moved the runtime skill to `skills/cold-email-coach/` to match the suite layout.
+- Updated the installer to copy from the skill folder and added `--dry-run`.
+- Added Claude and Cursor plugin manifests.
+- Normalized frontmatter, headings, and description triggers.
+- Added a `When Not to Use` section with a handoff table.
+- Kept hyphens as the only dash character across the documentation.
 - Added a Russian README and a CI workflow.
 
 ## [1.0.0] - 2026-11-07

@@ -1,0 +1,16 @@
+{
+  "name": "cold-email-coach",
+  "displayName": "Cold Email Coach",
+  "description": "Short, human cold emails that earn a reply.",
+  "version": "1.1.0",
+  "author": {
+    "name": "Yevhen Leonidov",
+    "url": "https://github.com/MADEVAL"
+  },
+  "homepage": "https://github.com/MADEVAL/cold-email-coach",
+  "repository": "https://github.com/MADEVAL/cold-email-coach",
+  "license": "MIT",
+  "skills": [
+    "./skills/cold-email-coach"
+  ]
+}

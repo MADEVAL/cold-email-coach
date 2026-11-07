@@ -20,11 +20,11 @@ jobs:
         run: pip install pyyaml
 
       - name: Lint must pass on the good fixture
-        run: python scripts/email_lint.py tests/fixtures/good-email.txt
+        run: python skills/cold-email-coach/scripts/email_lint.py tests/fixtures/good-email.txt
 
       - name: Lint must reject the bad fixture
         run: |
-          if python scripts/email_lint.py tests/fixtures/bad-email.txt; then
+          if python skills/cold-email-coach/scripts/email_lint.py tests/fixtures/bad-email.txt; then
             echo "bad fixture unexpectedly passed"
             exit 1
           fi
@@ -34,7 +34,8 @@ jobs:
           python - <<'PY'
           import os, re, sys
           import yaml
-          text = open("SKILL.md", encoding="utf-8").read()
+          skill_dir = "skills/cold-email-coach"
+          text = open(f"{skill_dir}/SKILL.md", encoding="utf-8").read()
           m = re.match(r"^---\n(.*?)\n---\n", text, re.S)
           if not m:
               sys.exit("SKILL.md: missing frontmatter")
@@ -44,9 +45,12 @@ jobs:
                   sys.exit(f"SKILL.md: missing {field}")
           missing = []
           for path in re.findall(r"`((?:references|examples|scripts|tests)/[^`]*)`", text):
-              if not os.path.exists(path):
+              if not os.path.exists(os.path.join(skill_dir, path)):
                   missing.append(path)
           if missing:
               sys.exit("SKILL.md: broken relative paths: " + ", ".join(sorted(set(missing))))
           print("frontmatter and paths OK")
           PY
+
+      - name: Check installer
+        run: python install.py --target project --dry-run

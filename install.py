@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Install the cold-email-coach skill into a local agent skills directory.
 
-The repository is the source of truth. Installation copies a snapshot; run the
-command again after editing the repo to refresh the copy.
+The repository is the source of truth. Installation copies a snapshot from
+``skills/cold-email-coach/``; run the command again after editing the repo to
+refresh the copy.
 
 Usage:
     python install.py --target all
@@ -11,6 +12,7 @@ Usage:
     python install.py --target project
     python install.py --list
     python install.py --check
+    python install.py --target project --dry-run
 """
 
 from __future__ import annotations
@@ -23,10 +25,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 SKILL_NAME = "cold-email-coach"
+SOURCE = ROOT / "skills" / SKILL_NAME
 PAYLOAD = [
     "SKILL.md",
-    "README.md",
-    "LICENSE",
     "references",
     "examples",
     "tests",
@@ -45,12 +46,14 @@ TARGETS = {
     "claude": Path.home() / ".claude" / "skills" / SKILL_NAME,
     "opencode": Path.home() / ".config" / "opencode" / "skills" / SKILL_NAME,
     "agents": Path.home() / ".agents" / "skills" / SKILL_NAME,
+    "codex": Path.home() / ".codex" / "skills" / SKILL_NAME,
     "project": Path.cwd() / ".opencode" / "skills" / SKILL_NAME,
 }
 TARGET_HELP = {
     "claude": "Claude Code",
     "opencode": "OpenCode (global)",
     "agents": "portable ~/.agents/skills",
+    "codex": "Codex CLI",
     "project": "current project .opencode/skills",
 }
 
@@ -73,13 +76,18 @@ def file_hashes(base: Path) -> dict[str, str]:
 def source_items() -> list[Path]:
     items = []
     for name in PAYLOAD:
-        path = ROOT / name
+        path = SOURCE / name
         if path.exists():
             items.append(path)
     return items
 
 
-def install(target: Path) -> None:
+def install(target: Path, dry_run: bool = False) -> None:
+    if dry_run:
+        print(f"would install: {target}")
+        for item in source_items():
+            print(f"  {item.relative_to(SOURCE)}")
+        return
     target.mkdir(parents=True, exist_ok=True)
     for item in source_items():
         dest = target / item.name
@@ -94,7 +102,7 @@ def source_hashes() -> dict[str, str]:
     names = {path.name for path in source_items()}
     return {
         rel: digest
-        for rel, digest in file_hashes(ROOT).items()
+        for rel, digest in file_hashes(SOURCE).items()
         if rel.split("/")[0] in names
     }
 
@@ -143,10 +151,15 @@ def main() -> int:
         action="store_true",
         help="Compare installed copies with the repository and report differences.",
     )
+    parser.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="Show what would be copied without writing anything.",
+    )
     args = parser.parse_args()
 
-    if not (ROOT / "SKILL.md").exists():
-        print("error: SKILL.md not found next to install.py", file=sys.stderr)
+    if not (SOURCE / "SKILL.md").exists():
+        print(f"error: {SOURCE / 'SKILL.md'} not found", file=sys.stderr)
         return 2
 
     selected = list(TARGETS) if args.target == "all" else [args.target]
@@ -163,8 +176,9 @@ def main() -> int:
         return 0 if all(results) else 1
 
     for name in selected:
-        install(TARGETS[name])
-    print("done. start a new agent session or run /reload if the skill does not appear.")
+        install(TARGETS[name], dry_run=args.dry_run)
+    if not args.dry_run:
+        print("done. start a new agent session or run /reload if the skill does not appear.")
     return 0
 
 

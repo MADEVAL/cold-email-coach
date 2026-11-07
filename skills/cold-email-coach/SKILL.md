@@ -1,15 +1,16 @@
 ---
 name: cold-email-coach
-description: Drafts, reviews, and rewrites cold outreach emails that sound like a person, not a campaign. Built on the principles of Josh Braun (Sales Without Rejection) and Will Allred (Lavender). Use when asked to write a cold email, critique or improve an existing one, write a follow-up, or produce subject lines. Not for newsletters, long sequences, or emails to existing customers.
+description: "Drafts, reviews, and rewrites cold outreach emails that sound like a person, not a campaign. Built on the principles of Josh Braun (Sales Without Rejection) and Will Allred (Lavender). Use when asked to write a cold email, critique or improve an existing one, write a follow-up, or produce subject lines. Do NOT use for newsletters, long sequences, or emails to existing customers."
 license: MIT
 compatibility: Plain Markdown. Optional Python 3.9+ for scripts/email_lint.py.
 metadata:
-  version: 1.0.0
   author: Yevhen Leonidov
+  version: "1.1.0"
   homepage: https://github.com/MADEVAL/cold-email-coach
+  repository: "https://github.com/MADEVAL/cold-email-coach"
 ---
 
-# Cold Email Coach
+# Cold Email Coach - Cold Outreach That Earns a Reply
 
 A cold email has one job: earn a reply. Not a meeting, not a sale, not a click. A reply.
 
@@ -17,7 +18,7 @@ That single goal changes everything. No pitch, no feature tour, no clever subjec
 
 This skill helps you write that note, audit an existing one, or fix it. It draws on two schools of cold outreach: Josh Braun's "Sales Without Rejection" and Will Allred's work at Lavender. The principles are applied in original words. There are no quotes and no affiliation with either author.
 
-## When not to use
+## When Not to Use
 
 Cold Email Coach writes first-contact emails from one person to another. Use something else when:
 
@@ -29,7 +30,7 @@ Cold Email Coach writes first-contact emails from one person to another. Use som
 | Rewriting AI-sounding text of any kind | human-ai |
 | Researching the recipient or their company | A research/browsing tool - never invent personalization |
 
-## Pick a mode
+## Pick a Mode
 
 | Mode | Use when | Output |
 |---|---|---|
@@ -45,7 +46,7 @@ Choose the mode from the request. If it is unclear:
 
 If the user asks for a follow-up, use **WRITE** with the follow-up rules in `references/patterns.md`.
 
-## Gather the minimum
+## Gather the Minimum
 
 Required:
 
@@ -69,7 +70,7 @@ If personalization is missing, do not invent it. Put an explicit placeholder in 
 
 Placeholders are better than fiction. A placeholder gets filled in; a made-up compliment gets deleted.
 
-## Write like a person
+## Write Like a Person
 
 **From Josh Braun:**
 
@@ -92,7 +93,7 @@ Placeholders are better than fiction. A placeholder gets filled in; a made-up co
 - Cut template phrases. "Hope this email finds you well" is a tell.
 - Plain text. No images, no banner signatures, no tracking pixels.
 
-## The 11-point checklist
+## The 11-Point Checklist
 
 Every review scores these. Each item gets **PASS** or **FAIL** and a one-line reason.
 
@@ -144,7 +145,7 @@ Do not add facts that were not in the original or the brief. Rewriting is subtra
 
 If the pasted text is not a cold email (a newsletter, an internal note, a customer email), say so in one line and stop.
 
-## Output contract
+## Output Contract
 
 Keep the output clean. No preamble, no "here is your email", no explanation of the method.
 
@@ -208,7 +209,7 @@ Do not include a checklist for the new version unless it adds information. The e
 - Do not use false familiarity ("loved your recent post" when you did not read it).
 - Follow-ups must add something: a new angle, a relevant example, a useful link. "Just bumping this" is banned.
 
-## Optional lint
+## Optional Lint
 
 For a quick mechanical check:
 
@@ -234,6 +235,6 @@ It reports word count, reading grade, you/I ratio, question and ask counts, subj
 | `scripts/email_lint.py` | Optional heuristic linter |
 | `install.py` | Installer for Claude Code, OpenCode, and portable agents |
 
-## Test cases
+## Test Cases
 
 Before changing this skill, run the cases in `tests/cases.md`. Each one states the input, the expected mode, and what must appear in the output.
